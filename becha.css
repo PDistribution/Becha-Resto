@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+}
+header{
+    height: 10vh;
+    width: 10%;
+
+   
+}
+header .navbar{
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(134, 133, 134, 0.692);
+    border-bottom: 2px solid rgb(204, 17, 79);
+
+  
+}
+header .logo{
+    align-items: center;
+    gap: 20px;
+
+}
+header .logo img{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(233, 15, 33, 0.5);
+    margin-top: 4px;
+}
+header .logo span{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    
+}
+header nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 20px;
+}
+header nav a{
+    display: flex;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    font-style: italic;
+    background: linear-gradient(35deg,red,white);
+    border-radius: 4px 6px;
+}
+header nav a:hover{
+    color: rgb(255, 255, 0);
+    text-decoration: underline;
+}
+header .logo span:hover{
+    color: red;
+}
+.welcome h1{
+    display: flex;
+    max-width: 1rem;
+    max-height: 1 rem;
+    color: red;
+    text-align: center;
+}
+.welcome p{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.welcome{
+    background: url(pexels3.jpg) no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+.welcome p:hover{
+    color: rgb(41, 41, 151);
+}
+
+.welcome:hover{
+    transform:scale(1.1);
+    max-width: 100%;
+}
+     /* C'est la partie footer */
+.contenu{
+    flex: 1 0 auto;
+}
+.footer{
+    flex-shrink: 0; 
+    border-top: 1px dashed #000;
+    max-width: 50%;
+}
+
+footer img{
+    height: 20px;
+}
+
+.contenu{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+.contenu h3{
+    color: black;
+    
+}
+.contenu h3:hover{
+    color: rgb(148, 25, 25);
+    text-decoration: underline;
+}
+footer .bloc1 ul{
+    justify-content: center;
+    list-style: none;
+    color: black;
+}
+footer .bloc2{
+    justify-content: center;
+    color: black;
+}
+footer .bloc3 ul{
+    justify-content: center;
+    list-style: none;
+    color: black;
+}
+footer .bloc4 a{
+    align-items: flex-start;
+    color: black;
+    justify-content: center;
+}
+footer .bloc4 ul{
+    list-style: none;
+}
+footer .block5{
+    text-align: center;
+    color: black;
+}
+
+      /* page menu */
+.menu{
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    text-decoration: underline;
+    flex-wrap: wrap;
+}
+.menu-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 50px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.box{
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(233, 15, 33, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    width: 420px;
+    height: 250px;
+}
+.box img:hover{
+transform: scale(1.1);
+}
+
+.box p{
+    text-align: center;
+    color: brown;
+}
+.box p:hover{
+    color: black;
+    text-decoration: underline;
+}
+.menu:hover{
+color: rgb(185, 57, 57);
+}
+    /* page plat du jour */
+.special{
+    text-align: center;
+    color: black;
+}
+.tito{
+color: black;
+}
+.tito:hover{
+    color: rgb(131, 40, 40);
+    text-decoration: underline;
+}
+.prix{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    padding: 40px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.prix:hover{
+    color: rgb(41, 41, 151);
+}
+.prix th{
+    text-align: center;
+    color: rgb(148, 25, 25);
+    background-color: #000000;
+}
+.prix td{
+    text-align: center;
+    background-color: white;
+    gap: 20px;
+}
+.prix th:hover{
+    color: white;
+    text-decoration: underline;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.sector1{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+main{
+    max-width: 400px;
+}
+aside{
+    max-width: 200px;
+}
+.div-sector1{
+    color: rgb(148, 25, 25);
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-sector2{
+    color: rgb(148, 25, 25);
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-sector2 ul{
+    list-style: none;
+}
+.div-sector1 p:hover{
+    color: #000;
+}
+.div-sector2 ul:hover{
+    color: #000;
+}
+       /* C'est la page reservation */
+.reserve1{
+   text-align: center;
+   color: black;
+}
+.reserve-list{
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    padding: 40px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    
+}
+.reserve-list th{
+    color: red;
+    background-color: goldenrod;
+
+}
+.reserve1:hover{
+    color: rgb(124, 29, 29);
+    text-decoration: underline;
+}
+.reserve-list table td{
+    background-color: rgb(161, 169, 177);
+    border-collapse: collapse;
+    border: 1px solid #e59e9e;
+}
+.reserve-list:hover{
+    color: white;
+}
+.fiche{
+    text-align: center;
+    background-color: rgb(138, 62, 77);
+    color: white;
+}
+.fiche h4:hover{
+color: rgb(44, 5, 5);
+text-decoration: underline;
+}
+select{
+    color: white;
+    background-color: rgb(97, 97, 161);
+}
+
+
+     /* C'est la page contact */
+.div-grand{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.tita{
+    text-align: center;
+    color: black;
+}
+main{
+    max-width: 500px;
+}
+aside{
+    max-width: 300px;
+}
+.horaire-bloc ul{
+list-style: none;
+color: black;
+justify-content: center;
+}
+.image-bloc img{
+    height: 350px;
+    width: 600px;
+    padding: 50px;
+}
+.image-bloc p{
+    display: flex;
+    text-align: center;
+    color: black;
+}
+.tita:hover{
+color: rgb(119, 16, 16);
+text-decoration: underline;
+}
+.image-bloc img:hover{
+    transform: scale(1.1);
+}
+            /* Ici c'est la partie Responsivité */
+
+
+@media screen and (max-width:768px) {
+    header .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer .contenu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu-1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .special{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tito{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .prix{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+    main aside{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .prix th td{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reserve{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reserve1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reserve-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reserve-list th td{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tita{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .div-grand{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+    main aside{
+        max-width: 100%;
+    }
+}
